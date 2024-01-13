@@ -1,0 +1,270 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: #1E202B;
+}
+
+/****************** Navbar ***********************/
+nav{
+    padding: 45px 0px  50px !important;
+    background-color: #1E202B;
+}
+nav .padd{
+    padding-inline: 25px;
+}
+nav .navbar-brand{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav .navbar-brand .logo_txt{
+    margin-left: 12px;
+}
+nav .navbar-brand .logo_txt h1{
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #fff;
+}
+nav .navbar-brand .logo_txt p{
+    font-size: 10px;
+    margin-bottom: 0;
+    color: #ffffffb2;
+}
+nav .nav-item{
+     margin-inline: 6px;
+     padding: 0 15px;
+     border: 2px solid transparent;
+     border-radius: 25px;
+     transition: all .3s ease-in-out;
+}
+nav .nav-item:hover{
+    border-color: #009AD8;
+}
+nav .nav-item:hover .nav-link{
+    color: #009AD8;
+}
+nav .nav-item .nav-link{
+    font-size: 14px;
+    padding: 2px 0;
+    color: #ffffff;
+}
+nav .active-link{
+    border-color: #009AD8;
+}
+nav .active-link .nav-link{
+    color: #009AD8;
+}
+.navbar-nav{
+    margin-top: 10px;
+    text-align: center;
+}
+/****************** Header ***********************/
+header{
+    width: 100%;
+    padding-top: 144.2px;
+}
+header .header-bg {
+    width: 100%;
+    height: 350px; 
+    background-image: url(../imgs/banner.png);
+    background-size: cover;
+}
+header .loc-input{
+    padding-top: 80px;
+    position: relative;
+    width: 90%;
+    margin: auto;
+}
+header .loc-input input{
+    padding: 14px;
+    border-color: transparent;
+    border-radius: 30px;
+    background-color: #1E202B;
+    border: none;
+    outline: none;
+    color: white;
+}
+header .loc-input button{
+    background-color: #009AD8;
+    color: #fff;
+    padding: 11px 37px;
+    border-radius: 25px;
+    border: none;
+    position: absolute;
+    top: 62.7%;
+    right: 0.42%;
+}
+header .content{
+    margin-bottom: 50px;
+    margin-top: -160px;
+}
+header .content .card{
+    padding-bottom: 15px;
+}
+header .content .first-day{
+    background-color: #323544;
+}
+header .content .first-day .header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #2D303D;
+    color: rgba(191, 193, 200, 1);
+    font-size: 14px;
+    border-top-left-radius: 14px;
+}
+header .content .first-day .title{
+    padding-top: 12px ;
+    color: rgba(191, 193, 200, 1);
+    font-size: 18px;
+    font-weight: 400;
+}
+header .content .first-day .degree{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 15px;
+    flex-wrap: wrap;
+}
+header .content .first-day .degree span{
+    font-size: 85px;
+    font-weight: 700;
+}
+header .content .first-day .degree img{
+    width: 35%;
+}
+header .content .card-body .desc{
+    color: rgba(0, 154, 216, 1);
+    font-size: 14px;
+}
+
+header .content .first-day .card-body .icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    width: 70%;
+}
+header .content .first-day .card-body .icons div span{
+    color: rgba(191, 193, 200, 1);
+    font-size: 14px;
+}
+header .content .second-day{
+    background-color: #262936;
+}
+header .content .second-day .header{
+    padding: 10px;
+    font-size: 14px;
+    background-color: #222530;
+    color: rgba(191, 193, 200, 1);
+}
+header .content .second-day .forecast-content{
+    padding-top: 30px;
+}
+header .content .second-day .forecast-content .forecast-degree{
+    padding-top: 15px;
+    font-size: 24px;
+    font-weight: 700;
+}
+header .content .second-day .forecast-content .small-forecast{
+    color: rgba(191, 193, 200, 1);
+    padding-bottom: 20px;
+}
+
+header .content .third-day{
+    background-color: #323544;
+}
+header .content .third-day .header{
+    padding: 10px;
+    font-size: 14px;
+    background-color: #2D303D;
+    color: rgba(191, 193, 200, 1);
+    border-top-right-radius: 14px;
+}
+header .content .third-day .forecast-content{
+    padding-top: 30px;
+}
+header .content .third-day .forecast-content .forecast-degree{
+    padding-top: 15px;
+    font-size: 24px;
+    font-weight: 700;
+}
+header .content .third-day .forecast-content .small-forecast{
+    color: rgba(191, 193, 200, 1);
+    padding-bottom: 20px;
+}
+/****************** Footer ***********************/
+footer{
+    width: 100%;
+    background-color: #262936;
+    padding: 80px 0 20px;
+}
+footer .subscribe{
+    width: 100%;
+}
+footer .subscribe .subscribe-input{
+    width: 100%;
+    position: relative;
+}
+footer .subscribe .subscribe-input input{
+    width: 100%;
+    padding: 14px;
+    border-color: transparent;
+    border-radius: 30px;
+    background-color: #1E202B;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 14px;
+}
+footer .subscribe .subscribe-input button{
+    background-color: #009AD8;
+    color: #fff;
+    padding: 12px 15px;
+    border-radius: 25px;
+    border: none;
+    position: absolute;
+    top: 4.3%;
+    right: 0.4%;
+    font-size: 14px;
+}
+footer .subscribe .social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer .subscribe .social i{
+    background-color: #1E202B;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(0, 154, 216, 1);
+    margin-right: 8px;
+    font-size: 18px;
+    transition: all 0.3s ease-in-out;
+}
+footer .subscribe .social i:hover{
+    background-color: rgba(0, 154, 216, 1);
+    color: white;
+}
+footer p{
+    margin-top: 40px;
+    color: rgba(191, 193, 200, 1);
+    font-size: 14px;
+}
+
+
+/**************Media Query***************/
+
+@media screen and (min-width: 1400px){
+   .container{
+    max-width: 1140px;
+   }
+}

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather</title>
+
+  <!----------Fonts------------------>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+  <!----------Font awesome----------->
+  <link rel="stylesheet" href="css/all.min.css">
+
+  <!----------Bootstrap File--------->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <!----------Main Css File--------->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!------------------Navbar---------------->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container padd">
+      <a class="navbar-brand" href="#">
+        <img src="imgs/logo@2x.png" alt="logo" width="64" height="38">
+        <div class="logo_txt">
+          <h1>Weather</h1>
+          <p>tagline goes here</p>
+        </div>
+
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+          <li class="nav-item active-link">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">News</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Live Cameras</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Photos</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+  <!------------------Header---------------->
+
+  <header>
+
+    <div class="header-bg">
+
+      <div class="container">
+
+      <div class="loc-input text-center">
+        <input type="text" class="w-100" name="location" placeholder="Find your location..." id="location">
+        <button>Find</button>
+      </div>
+
+    </div>
+
+    </div>
+
+    <div class="content">
+      <div class="container">
+        <div class="row gx-0 gy-2">
+
+          <div class="col-sm-12 col-md-4" id="weather">
+
+            <div class="card rounded-end-0 first-day text-white h-100">
+
+              <div class="header">
+                <div><span>Saturday</span></div>
+                <div><span>13January</span></div>
+              </div>
+              
+              <div class="card-body">
+              
+                <h5 class="title">Cairo</h5>
+                <div class="degree">
+                  <span>20<sup>o</sup>C</span>
+                  <img src='imgs/113.png' alt="weather-img">
+                </div>
+                <div class="desc">
+                  <span>sunny</span>
+                </div>
+              
+                <div class="icons">
+                  <div>
+                    <img src="imgs/icon-umberella.png">
+                    <span>20%</span>
+                  </div>
+              
+                  <div>
+                    <img src="imgs/icon-wind.png">
+                    <span>18km/h</span>
+                  </div>
+              
+                  <div>
+                    <img src="imgs/icon-compass.png">
+                    <span>East</span>
+                  </div>
+              
+                </div>
+              
+              </div>
+              
+              </div>
+
+          </div>
+
+          <div class="col-sm-12 col-md-4" id="firstForecast">
+           
+            <div class="card rounded-0 text-center second-day text-white h-100">
+
+              <div class="header">
+                <div><span>Sunday</span></div>
+              </div>
+              
+              <div class="card-body">
+              
+                <div class="forecast-content">
+                  <img src='imgs/116.png' alt="forecast-img" width="15%">
+                  <div class="forecast-degree">
+                    <span>21<sup>o</sup>C</span>
+                  </div>
+                  <div class="small-forecast">
+                    <small>$20<sup>o</sup></small>
+                  </div>
+              
+                  <div class="desc">
+                    <span>sunny</span>
+                  </div>
+                </div>
+              
+              </div>
+              </div>
+
+          </div>
+
+          <div class="col-sm-12 col-md-4" id="secondForecast">
+            
+            <div class="card rounded-start-0 text-center third-day text-white h-100">
+
+              <div class="header">
+                <div><span>Monday</span></div>
+              </div>
+              
+              <div class="card-body">
+              
+                <div class="forecast-content">
+                  <img src='imgs/119.png' alt="forecast-img" width="15%">
+                  <div class="forecast-degree">
+                    <span>22<sup>o</sup>C</span>
+                  </div>
+                  <div class="small-forecast">
+                    <small>18<sup>o</sup></small>
+                  </div>
+              
+                  <div class="desc">
+                    <span>Partly cloudy</span>
+                  </div>
+              
+                </div>
+              
+              </div>
+              </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </header>
+
+  <!------------------Footer---------------->
+  <footer>
+
+    <div class="container">
+      <div class="subscribe text-white">
+
+        <div class="row justify-content-around">
+
+          <div class="col-md-6">
+            <div class="subscribe-input">
+              <input type="text" name="subscribe" placeholder="Enter your email to subscribe...">
+              <button>Subscribe</button>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="social mt-3">
+              <i class="fa-brands fa-facebook-f" role="button"></i>
+              <i class="fa-brands fa-twitter" role="button"></i>
+              <i class="fa-brands fa-google" role="button"></i>
+              <i class="fa-brands fa-pinterest" role="button"></i>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <p>Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+
+    </div>
+
+
+  </footer>
+
+  <!----------Bootstrap JS File----------->
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+  <!----------Main JS File----------->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
